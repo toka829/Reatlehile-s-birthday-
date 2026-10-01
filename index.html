@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>REATLEHILE MOTSHEKALLE 🫂 - MY FAVORITE PERSON (happy birthday)</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Poppins:wght@400;600;700&family=Dancing+Script:wght@600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--g:#ff6ec7;--b:#7873f5;--p:#ff8a5c;--bg:#0a050a}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:white;font-family:'Poppins',sans-serif;overflow-x:hidden}
+#bg{position:fixed;top:0;left:0;width:100%;height:100%;z-index:-1}
+#loader{position:fixed;inset:0;background:#000;z-index:9999;display:flex;flex-direction:column;justify-content:center;align-items:center;transition:0.8s}
+.load-logo{font-family:'Orbitron',sans-serif;font-weight:900;font-size:3rem;background:linear-gradient(90deg,var(--g),var(--b));-webkit-background-clip:text;-webkit-text-fill-color:transparent;text-align:center}
+.bar{width:300px;height:4px;background:rgba(255,255,255,0.1);border-radius:10px;margin-top:20px;overflow:hidden}
+.progress{height:100%;width:0%;background:linear-gradient(90deg,var(--g),var(--b));animation:fill 3s forwards}
+@keyframes fill{to{width:100%}}
+section{min-height:100vh;padding:80px 20px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;position:relative}
+.badge{border:1px solid var(--g);padding:8px 20px;border-radius:50px;color:var(--g);letter-spacing:3px;font-size:0.8rem;box-shadow:0 0 15px var(--g);margin-bottom:20px;font-family:'Orbitron',sans-serif}
+#hero h1{font-family:'Orbitron',sans-serif;font-weight:900;font-size:clamp(2.5rem,8vw,5.5rem);line-height:0.9;background:linear-gradient(90deg,var(--g),var(--b),var(--p));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.script{font-family:'Dancing Script',cursive;font-weight:700;font-size:2.2rem;color:var(--g);margin-top:10px}
+.date-card{margin-top:30px;background:rgba(255,110,199,0.08);border:2px solid var(--g);padding:20px 40px;border-radius:20px;backdrop-filter:blur(10px)}
+.date-card h3{font-family:'Orbitron',sans-serif;font-weight:700;font-size:1.4rem;color:var(--g)}
+.date-card p{font-family:'Poppins',sans-serif}
+.love{margin-top:15px;background:linear-gradient(90deg,var(--g),var(--b));padding:8px 20px;border-radius:50px;font-weight:700;display:inline-block;font-family:'Poppins',sans-serif}
+.countdown{display:flex;gap:12px;margin-top:30px;flex-wrap:wrap;justify-content:center}
+.box{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);padding:15px;min-width:85px;border-radius:15px}
+.box span{font-family:'Orbitron',sans-serif;font-weight:700;font-size:1.8rem;color:var(--g);display:block}
+.box p{font-family:'Poppins',sans-serif;font-size:0.7rem;opacity:0.6;letter-spacing:2px}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:15px;max-width:900px;width:100%;margin:30px auto}
+.gallery img{width:100%;height:220px;object-fit:cover;border-radius:15px;border:2px solid rgba(255,255,255,0.1);transition:0.3s;cursor:pointer}
+.gallery img:hover{transform:scale(1.05);border-color:var(--g);box-shadow:0 0 25px var(--g)}
+.poem-section{min-height:90vh;position:relative;background-size:cover;background-position:center;background-attachment:fixed;display:flex;justify-content:center;align-items:center}
+.poem-section::before{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,5,10,0.85) 0%,rgba(10,5,10,0.6) 50%,rgba(10,5,10,0.9) 100%);z-index:1}
+.poem-content{position:relative;z-index:2;max-width:800px;padding:40px 30px;background:rgba(0,0,0,0.35);border:1px solid rgba(255,110,199,0.3);border-radius:20px;backdrop-filter:blur(12px);box-shadow:0 0 40px rgba(255,110,199,0.15)}
+.poem-content h2{font-family:'Orbitron',sans-serif;font-weight:700;color:var(--g);font-size:1.6rem;margin-bottom:20px;letter-spacing:2px}
+.poem-content p{font-family:'Dancing Script',cursive;font-weight:600;font-size:1.6rem;line-height:1.9;text-align:left;color:#e8e8e8}
+.poem-1{background-image:url('Reatlehile1.jpg')}
+.poem-5{background-image:url('Reatlehile5.jpg')}
+.wish-wrap{max-width:700px;width:100%;margin-top:20px;display:flex;flex-direction:column;gap:15px}
+.wish{background:rgba(255,255,255,0.03);border-left:4px solid var(--g);padding:15px 20px;border-radius:0 12px 12px 0;text-align:left;word-break:break-word;font-family:'Poppins',sans-serif}
+.wish strong{color:var(--g)}
+.input-row{display:flex;gap:10px;margin-top:30px;max-width:500px;width:100%}
+.input-row input{flex:1;padding:14px 20px;border-radius:50px;border:1px solid var(--g);background:rgba(255,255,255,0.05);color:white;outline:none;font-family:'Poppins',sans-serif}
+.btn{padding:14px 30px;border-radius:50px;border:none;font-weight:700;cursor:pointer;transition:0.3s;font-family:'Poppins',sans-serif}
+.btn-p{background:linear-gradient(90deg,var(--g),var(--b));color:white}
+.btn:hover{transform:translateY(-3px) scale(1.05)}
+.confetti{position:fixed;width:10px;height:10px;top:-10px;z-index:999;animation:fall linear forwards}
+@keyframes fall{to{transform:translateY(110vh) rotate(720deg)}}
+footer{text-align:center;padding:40px;opacity:0.5;border-top:1px solid rgba(255,255,255,0.05);font-size:0.85rem;font-family:'Poppins',sans-serif}
+.title{font-family:'Orbitron',sans-serif;font-weight:700;font-size:2.5rem;margin-bottom:20px;color:var(--g)}
+</style>
+</head>
+<body>
+<div id="loader">
+<div class="load-logo">REATLEHILE MOTSHEKALLE</div>
+<div style="letter-spacing:4px;opacity:0.7;margin-top:8px;font-family:'Poppins',sans-serif">04 OCTOBER 🫂</div>
+<div class="bar"><div class="progress"></div></div>
+</div>
+<canvas id="bg"></canvas>
+<section id="hero">
+<div class="badge">🫂 04 OCTOBER - It's your birthday 🥺🫂</div>
+<h1>REATLEHILE<br>MOTSHEKALLE</h1>
+<div class="script">The most beautiful soul I know</div>
+<div class="date-card">
+<h3>04 OCTOBER 2026</h3>
+<p>Countdown to our special day.the day the stars celebrated your arrival to earth</p>
+<div class="love">💖 FOREVER MY PERSON 💖</div>
+</div>
+<div class="countdown">
+<div class="box"><span id="d">00</span><p>DAYS</p></div>
+<div class="box"><span id="h">00</span><p>HOURS</p></div>
+<div class="box"><span id="m">00</span><p>MIN</p></div>
+<div class="box"><span id="s">00</span><p>SEC</p></div>
+</div>
+<div style="margin-top:35px;display:flex;gap:12px;flex-wrap:wrap;justify-content:center;">
+<button class="btn btn-p" onclick="confetti(150)">I ADORE YOU 💖</button>
+<a href="#poem1" class="btn" style="background:transparent;border:2px solid var(--g);color:var(--g);text-decoration:none;">WHY YOU? ↓</a>
+</div>
+</section>
+<section class="poem-section poem-1" id="poem1">
+<div class="poem-content">
+<div class="badge">THE DAY I KNEW</div>
+<h2>WHEN I MET YOU</h2>
+<p>I don't remember exactly when you became my favorite thought, it just happened.<br><br>One day you were a name, the next day you were the reason I check my phone and smile like an idiot. The way you laugh, the way you care, the way you make even a normal day in Maputsoe feel like something special.<br><br>You are not just beautiful outside, Reatlehile. Your heart is beautiful. Your kindness, your energy, the way you make people feel seen. That's what I fell for.</p>
+</div>
+</section>
+<section id="pics">
+<div class="badge">YOUR SMILE</div>
+<h2 class="title">REATLEHILE GALLERY</h2>
+<div class="gallery">
+<img src="Reatlehile2.jpg" alt="Reatlehile 2" onclick="confetti(80)">
+<img src="Reatlehile3.jpg" alt="Reatlehile 3" onclick="confetti(80)">
+<img src="Reatlehile6.jpg" alt="Reatlehile 6" onclick="confetti(80)">
+<img src="Reatlehile7.jpg" alt="Reatlehile 7" onclick="confetti(80)">
+<img src="Reatlehile8.jpg" alt="Reatlehile 8" onclick="confetti(80)">
+</div>
+</section>
+<section class="poem-section poem-5" id="poem5">
+<div class="poem-content">
+<div class="badge" style="border-color:var(--b);color:var(--b);box-shadow:0 0 15px var(--b);">WHAT I PROMISE</div>
+<h2 style="color:var(--b);">MY PROMISE TO YOU</h2>
+<p>My promise is simple, Reatlehile Motshekalle.<br><br>I promise to be the person who always hypes you, who always listens, who always chooses you. I promise to protect your peace, to celebrate your wins like they are my own, to remind you how amazing you are on days you forget.<br><br>You are my favorite hello and my hardest goodbye. You are my person. And if life gives me a chance, I want to keep writing this story with you, one day, one laugh, one memory at a time.<br><br>Always you. Only you. 🫂</p>
+</div>
+</section>
+<section id="wishes">
+<div class="badge">LOVE NOTES</div>
+<h2 class="title">A LETTER FOR YOU</h2>
+<div class="wish-wrap" id="wishList">
+<div class="wish"><strong>From My Heart:</strong> You are my favorite notification 💌</div>
+<div class="wish"><a href="https://toka829.github.io/Reatlehile-Motshekalle-/">https://toka829.github.io/Reatlehile-Motshekalle-/</a></div>
+<div class="wish"><a href="https://toka829.github.io/toka-birthday/">https://toka829.github.io/toka-birthday/</a></div>
+<div class="wish"><strong>From Me:Toka Mahlabe</strong> If I had to choose again, I'd still choose you, every time 🫂</div>
+</div>
+<div class="input-row">
+<input id="wishInput" placeholder="Write something sweet..." maxlength="200">
+<button class="btn btn-p" onclick="addWish()">SEND 💖</button>
+</div>
+</section>
+<footer>REATLEHILE MOTSHEKALLE | 04 OCTOBER 2026 | MY PERSON FOREVER 🫂</footer>
+<script>
+window.addEventListener('load',()=>{setTimeout(()=>{document.getElementById('loader').style.opacity='0';setTimeout(()=>document.getElementById('loader').remove(),800);confetti(100)},3000)});
+const canvas=document.getElementById('bg');const ctx=canvas.getContext('2d');canvas.width=innerWidth;canvas.height=innerHeight;
+let parts=[];for(let i=0;i<80;i++)parts.push({x:Math.random()*canvas.width,y:Math.random()*canvas.height,r:Math.random()*2+1,dx:(Math.random()-0.5)*0.6,dy:(Math.random()-0.5)*0.6,c:['#ff6ec7','#7873f5','#ff8a5c'][Math.floor(Math.random()*3)]});
+function anim(){ctx.clearRect(0,0,canvas.width,canvas.height);parts.forEach(p=>{ctx.beginPath();ctx.arc(p.x,p.y,p.r,0,Math.PI*2);ctx.fillStyle=p.c;ctx.shadowBlur=10;ctx.shadowColor=p.c;ctx.fill();p.x+=p.dx;p.y+=p.dy;if(p.x<0||p.x>canvas.width)p.dx*=-1;if(p.y<0||p.y>canvas.height)p.dy*=-1});requestAnimationFrame(anim)}anim();
+function tick(){
+  const target = new Date("October 04, 2026 00:00:00").getTime();
+  const now = Date.now();
+  let diff = target - now;
+  if(diff <= 0){
+    document.getElementById('d').innerText="00";
+    document.getElementById('h').innerText="00";
+    document.getElementById('m').innerText="00";
+    document.getElementById('s').innerText="00";
+    document.querySelector('.date-card h3').innerText="IT'S TODAY! 🫂💖";
+    return;
+  }
+  document.getElementById('d').innerText=String(Math.floor(diff/(1000*60*60*24))).padStart(2,'0');
+  document.getElementById('h').innerText=String(Math.floor(diff%(1000*60*60*24)/(1000*60*60))).padStart(2,'0');
+  document.getElementById('m').innerText=String(Math.floor(diff%(1000*60*60)/(1000*60))).padStart(2,'0');
+  document.getElementById('s').innerText=String(Math.floor(diff%(1000*60)/1000)).padStart(2,'0');
+}
+setInterval(tick,1000);tick();
+function confetti(n=100){const colors=['#ff6ec7','#7873f5','#ff8a5c','#ffee00'];for(let i=0;i<n;i++){let el=document.createElement('div');el.className='confetti';el.style.left=Math.random()*100+'%';el.style.background=colors[Math.floor(Math.random()*4)];el.style.animationDuration=(Math.random()*3+2)+'s';el.style.width=(Math.random()*8+6)+'px';el.style.height=el.style.width;document.body.appendChild(el);setTimeout(()=>el.remove(),6000)}} 
+function addWish(){
+  const inp=document.getElementById('wishInput');
+  const text=inp.value.trim();
+  if(!text) return;
+  const div=document.createElement('div');div.className='wish';
+  const strong=document.createElement('strong');strong.textContent='From You: ';
+  const span=document.createElement('span');span.textContent=text;
+  div.appendChild(strong);div.appendChild(span);
+  document.getElementById('wishList').appendChild(div);
+  inp.value='';confetti(60);
+}
+document.getElementById('wishInput').addEventListener('keypress',e=>{if(e.key==='Enter')addWish()});
+let buf="";addEventListener('keydown',e=>{buf+=e.key.toLowerCase();if(buf.length>20)buf=buf.slice(-20);if(buf.includes('reatlehile')){alert('🫂 REATLEHILE, YOU ARE MY FAVORITE PERSON FOREVER 💖');confetti(200);buf=""}});
+</script>
+</body>
+</html>
